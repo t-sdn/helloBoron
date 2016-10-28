@@ -6,4 +6,17 @@ module example {
     revision "2015-01-05" {
         description "Initial revision of example model";
     }
+
+    rpc hello-world {
+        input {
+            leaf name {
+                type string;
+            }
+        }
+        output {
+            leaf greeting {
+                type string;
+            }
+        }
+    }
 }
